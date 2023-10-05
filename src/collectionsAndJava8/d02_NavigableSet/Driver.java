@@ -28,6 +28,7 @@ public class Driver {
 		Iterator<Integer> iterator2 = sortedSet1.iterator();
 		while(iterator2.hasNext()) {
 			System.out.println(iterator2.next());
+			
 		}
 	}
 
