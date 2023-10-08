@@ -34,12 +34,31 @@ public class Driver {
 		
 		Iterator<Integer> iterator = integers.iterator();
 		while(iterator.hasNext()) {
-			System.out.println(iterator.next()); // ekleme sirasina gore geliyor
+			System.out.print(iterator.next()+" "); // ekleme sirasina gore geliyor
 		}
-		System.out.println("----");
+		
 		
 		System.out.println(integers.get(0)); // listedeki istedigin index boyle cagirilir 10
-		System.out.println(integers.get(integers.size() -1)); // son elemani getirdik 20
+		System.out.println(integers.get(integers.size() -1)); // yukari ikinci index 55 eklemistik 
+		//burda 4. index getirir 20 gelir yanlistir, 30 gelmesi gerekir.
+		// listede olmayan bir eleman indexOf ile cagirdiginda -1 doner
+		integers.addFirst(33);
+		System.out.println(integers.getFirst());
+		
+		integers.addLast(44);
+		System.out.println(integers.getLast());
+		
+		int indexOf = integers.indexOf(33);
+		System.out.println("---");
+		System.out.println(integers);
+		System.out.println(indexOf);
+		System.out.println(integers.indexOf(20));
+		System.out.println(integers.lastIndexOf(20));
+		
+		integers.remove();// parametre gondermedin zaman listenin en basindaki obj i kaldirir
+		integers.remove(4);
+		integers.remove(33);
+		
 		
 		
 		
