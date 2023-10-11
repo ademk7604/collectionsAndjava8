@@ -1,4 +1,4 @@
-package LambdaLab;
+package d19_LambdaLab;
 
 import java.io.Serializable;
 import java.time.LocalDate;
